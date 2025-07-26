@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+  background-color: gray;
+  min-height: 90vh;
+  display: grid;
+  flex-direction: column;
+}
+
+header {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+section {
+  background-color: white;
+  width: 70%;
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  margin: 10px 0;
+  text-align: center;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 80%;
+}
+
+
+
+div {
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Media Query para telas maiores */
+@media screen and (min-width: 600px) {
+  section {
+    max-width: 600px;
+    padding: 20px;
+  }
+
+  input {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  input#botao {
+    display: inline-block;
+    width: 200px;
+    padding: 8px 20px;
+  }
+}
