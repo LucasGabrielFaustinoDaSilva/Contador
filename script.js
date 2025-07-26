@@ -4,14 +4,20 @@ function enviar() {
 
   let pula = Number(document.getElementById('pula').value)
   let res = document.getElementById('res')
-  for (let i = 1; i <= number; i += pula) {
-    res.innerHTML += `${i}<br>`
-  } 
-  res.innerHTML += `<br>o numero é ${number} e pula ${pula}`
 
-}
-
-function apagar(){
-  let res = document.getElementById('res')
   res.innerHTML = ''
+
+  if (number < 0 || pula < 0 || pula > number) {
+    alert('Digite valores validos')
+  } else {
+    for (let i = 0; i <= number; i += pula) {
+      res.innerHTML += `(${i}) `
+
+    }
+    res.innerHTML += `<br><br>o numero é ${number} e pula de ${pula} em ${pula}`
+  }
+
+
+
+
 }
